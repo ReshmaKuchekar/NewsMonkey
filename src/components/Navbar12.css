@@ -1,0 +1,14 @@
+.nav-item{
+    font-weight: 500;
+}
+.nav-item :hover{
+    font-weight: 500;
+    background-color: #ffc788;
+    color: black;
+    border-radius: 10px;
+}
+.nav-link{
+    color: white;
+}
+
+
