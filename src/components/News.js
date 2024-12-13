@@ -38,7 +38,7 @@ export class News extends Component {
       this.props.setProgress(10);
       let url=`https://newsapi.org/v2/everything?q=tesla&from=2024-11-13&sortBy=publishedAt&apiKey=7a5775febeea4d60a6901b5d5ab0f6cc`;
         this.setState({loading:true})
-        let data = await fetch(url);
+        let data = await fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-11-13&sortBy=publishedAt&apiKey=7a5775febeea4d60a6901b5d5ab0f6cc");
         this.props.setProgress(30);
         let parsedata = await data.json();
         this.props.setProgress(60);
